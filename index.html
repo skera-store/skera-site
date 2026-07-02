@@ -3,100 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKERA ⤊ ШХЕРА — север в доме</title>
+    <title>SKERA | ШХЕРА — Скандинавский дизайн</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            font-family: "Arsenal", sans-serif;
-            background-color: #D9D2C9; /* Скандинавский айвори */
-            color: #2F3538; /* Мокрая скала */
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arsenal', sans-serif;
+            background-color: #F4F3EF; /* Светло-серый скандинавский фон */
+            color: #2B2D2F; /* Глубокий графитовый для текста */
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding: 20px;
             text-align: center;
         }
+
         .container {
             max-width: 600px;
-            padding: 40px 20px;
+            width: 100%;
         }
-        /* Блок для рисунка логотипа (камень с лентой реки) */
+
+        .logo-container {
+            margin-bottom: 15px; /* Уменьшили расстояние между камнем и текстом */
+        }
+
         .logo-img {
-            width: 150px; /* Оптимальный размер для графики */
+            width: 120px; /* Размер вашего логотипа */
             height: auto;
-            margin-bottom: 24px;
+            display: inline-block;
         }
-        /* Текстовое начертание бренда — плотное, без лишних пробелов */
-        .brand-name {
-            font-size: 34px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400; /* Сделали шрифт ОБЫЧНЫМ, не жирным */
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: #1A1C1E;
         }
-        /* Слоган */
-        .slogan {
-            font-size: 18px;
-            font-style: italic;
-            letter-spacing: 2px;
-            opacity: 0.8;
-            margin-bottom: 45px;
+
+        .subtitle {
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 40px;
+            color: #606468;
+            text-transform: lowercase;
         }
-        .description {
-            font-size: 18px;
-            line-height: 1.7;
-            margin-bottom: 45px;
-        }
-        .links {
+
+        .links-container {
             display: flex;
             flex-direction: column;
-            gap: 14px;
-            max-width: 320px;
-            margin: 0 auto;
+            gap: 15px;
+            margin-bottom: 40px;
         }
+
         .btn {
             display: block;
-            padding: 16px 20px;
-            border: 1px solid #2F3538;
-            border-radius: 0;
-            color: #2F3538;
+            width: 100%;
+            padding: 16px;
+            background-color: #2B2D2F;
+            color: #F4F3EF;
             text-decoration: none;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
             transition: all 0.3s ease;
+            border: 1px solid #2B2D2F;
         }
+
         .btn:hover {
-            background-color: #6F7B6A; /* Наведение: Северный мох */
-            border-color: #6F7B6A;
-            color: #D9D2C9;
+            background-color: transparent;
+            color: #2B2D2F;
+        }
+
+        footer {
+            font-size: 0.85rem;
+            color: #8A8E92;
+            letter-spacing: 0.05em;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="logo_site.svg" alt="SKERA Логотип" class="logo-img">
-        
-        <div class="brand-name">SKERA ⤊ ШХЕРА</div>
-        
-        <div class="slogan">север в доме</div>
-        
-        <div class="description">
-            Пространство скандинавского дизайна, декора и предметов интерьера.<br>Скоро открытие.
+        <div class="logo-container">
+            <img src="logo_site.svg" alt="SKERA Логотип" class="logo-img">
         </div>
 
-        <div class="links">
-            <a href="https://instagram.com/skera_store" target="_blank" class="btn">Instagram</a>
-            <a href="https://t.me/skera_store" target="_blank" class="btn">Telegram</a>
-            <a href="https://vk.com/skera_store" target="_blank" class="btn">ВКонтакте</a>
-            <a href="https://threads.net/@skera_store" target="_blank" class="btn">Threads</a>
+        <h1>SKERA ⤊ ШХЕРА</h1>
+        
+        <div class="subtitle">север в доме. скоро.</div>
+
+        <div class="links-container">
+            <a href="https://vk.ru/skera.store" target="_blank" class="btn">ВКОНТАКТЕ</a>
+            <a href="https://t.me/skera_store" target="_blank" class="btn">TELEGRAM</a>
         </div>
+
+        <footer>
+            &copy; 2026 SKERA | ШХЕРА. Все права защищены.
+        </footer>
     </div>
 
 </body>
