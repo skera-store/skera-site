@@ -32,13 +32,15 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Строгое выравнивание всех элементов по центру */
+            align-items: center; /* Жесткое выравнивание всех элементов строго по центру */
+            justify-content: center;
         }
 
         .logo-container {
-            margin-bottom: 5px; /* Минимальный отступ до текста */
+            margin-bottom: 0px; /* Полностью убрали нижний отступ контейнера */
             display: flex;
             justify-content: center;
+            align-items: center;
             width: 100%;
         }
 
@@ -46,16 +48,19 @@
             width: 120px;
             height: auto;
             display: block;
+            margin: 0 auto; /* Принудительное выравнивание картинки по центру */
         }
 
         h1 {
             font-size: 2.2rem;
-            font-weight: 400; /* Обычный шрифт, не жирный */
+            font-weight: 400; /* Обычный шрифт */
             letter-spacing: 0.15em;
             text-transform: uppercase;
+            margin-top: 0px; /* Обнулили верхний отступ заголовка, чтобы прижать его к камню */
             margin-bottom: 15px;
             color: #1A1C1E;
             width: 100%;
+            text-align: center;
         }
 
         .subtitle {
@@ -64,13 +69,13 @@
             margin-bottom: 40px;
             color: #606468;
             text-transform: lowercase;
-            font-style: italic; /* Слоган наклонным шрифтом */
+            font-style: italic; /* Курсив для слогана */
         }
 
         .links-container {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Центрируем сами плашки кнопок */
+            align-items: center;
             gap: 15px;
             margin-bottom: 40px;
             width: 100%;
@@ -78,9 +83,9 @@
 
         .btn {
             display: inline-block;
-            width: auto; /* Убираем растягивание на всю ширину */
-            min-width: 180px; /* Задаем одинаковую минимальную ширину, чтобы кнопки смотрелись симметрично */
-            padding: 12px 30px; /* Комфортные отступы внутри плашки */
+            width: auto;
+            min-width: 180px; /* Одинаковая аккуратная длина кнопок */
+            padding: 12px 30px;
             background-color: #2B2D2F;
             color: #F4F3EF;
             text-decoration: none;
