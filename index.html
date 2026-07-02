@@ -16,8 +16,8 @@
 
         body {
             font-family: 'Arsenal', sans-serif;
-            background-color: #F4F3EF; /* Светло-серый скандинавский фон */
-            color: #2B2D2F; /* Глубокий графитовый для текста */
+            background-color: #F4F3EF;
+            color: #2B2D2F;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -30,25 +30,32 @@
         .container {
             max-width: 600px;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Гарантирует строгое выравнивание всех элементов по центру */
         }
 
         .logo-container {
-            margin-bottom: 15px; /* Уменьшили расстояние между камнем и текстом */
+            margin-bottom: 5px; /* Свели к минимуму расстояние до текста */
+            display: flex;
+            justify-content: center; /* Центрирование внутри контейнера */
+            width: 100%;
         }
 
         .logo-img {
-            width: 120px; /* Размер вашего логотипа */
+            width: 120px;
             height: auto;
-            display: inline-block;
+            display: block;
         }
 
         h1 {
             font-size: 2.2rem;
-            font-weight: 400; /* Сделали шрифт ОБЫЧНЫМ, не жирным */
+            font-weight: 400;
             letter-spacing: 0.15em;
             text-transform: uppercase;
             margin-bottom: 15px;
             color: #1A1C1E;
+            width: 100%;
         }
 
         .subtitle {
@@ -57,6 +64,7 @@
             margin-bottom: 40px;
             color: #606468;
             text-transform: lowercase;
+            font-style: italic; /* Сделали шрифт наклонным (курсивом) */
         }
 
         .links-container {
@@ -64,6 +72,7 @@
             flex-direction: column;
             gap: 15px;
             margin-bottom: 40px;
+            width: 100%;
         }
 
         .btn {
@@ -104,8 +113,8 @@
         <div class="subtitle">север в доме. скоро.</div>
 
         <div class="links-container">
-            <a href="https://vk.ru/skera.store" target="_blank" class="btn">ВКОНТАКТЕ</a>
-            <a href="https://t.me/skera_store" target="_blank" class="btn">TELEGRAM</a>
+            <a href="https://vk.com/YOUR_PAGE" target="_blank" class="btn">ВКОНТАКТЕ</a>
+            <a href="https://t.me/YOUR_PAGE" target="_blank" class="btn">TELEGRAM</a>
         </div>
 
         <footer>
